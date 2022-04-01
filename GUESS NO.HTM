@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<body style="background-image: linear-gradient(to right, skyblue, lightgrey, pink, yellow)">
+<center><h1>WELCOME TO THE LOTTERY PREDICTOR</h1></center>
+<title>HOME PAGE</title>
+<script>
+function ch()
+{
+a=document.getElementById("t1").value;
+b=parseInt(a);
+switch(b)
+{
+
+case 9: document.getElementById("p1").innerHTML="GOOD WORK";break;
+;
+default:document.getElementById("p1").innerHTML="NOT MATCHED";
+}
+}
+</script>
+<center>
+<p>
+  Enter a number between 1-10:
+  <input type="text" id="t1">
+</p>
+<p><bold>
+  Click the button to see the RESULT OF YOUR LOTTERY  ACCORDING TO your entered number represents:
+  <button onclick="ch()">ENTER</button></bold>
+</p>
+<p id="p1"></p>
+</center>
+</head>
+</html>
